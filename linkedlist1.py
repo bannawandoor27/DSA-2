@@ -14,7 +14,22 @@ class LinkedList:
     
     def print(self):
         current = self.head
+        lltr = ''
         while current:
-            print(current.data)
+            lltr+=str(current.data)+' --> '
             current = current.next
+        print(lltr)
     
+    def insert_at_end(self,data):
+        if self.head is None:
+            self,head = Node(data,None)
+            return
+        
+        itr  = self.head
+
+
+
+if __name__ == '__main__':
+    ll = LinkedList()
+    for i in  reversed(range(1,11)):ll.insert_at_beginning(i)
+    ll.print()
