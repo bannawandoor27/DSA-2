@@ -46,6 +46,8 @@ class DoublyLinkedList:
             print(current.data, end=" ")
             current = current.next
         print()
+    
+
 
 
 # Example usage
