@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+        
 
 def array_to_linked_list(arr):
     if not arr:
